@@ -1,4 +1,6 @@
 ---
+name: Infrastructure & Deployment Standards
+description: AWS CDK standards, deployment safety rules, cost awareness guidelines, and approved infrastructure patterns for IaC projects.
 inclusion: fileMatch
 fileMatchPattern: "**/{cdk,infra,infrastructure,deploy,cloudformation}/**/*"
 ---

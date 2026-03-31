@@ -1,4 +1,5 @@
 ---
+name: Scaffold a New Feature
 description: Scaffold a new feature with all the right patterns - component, API route, database model, types, and tests following organizational standards
 ---
 

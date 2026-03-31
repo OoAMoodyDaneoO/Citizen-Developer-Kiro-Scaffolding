@@ -1,4 +1,6 @@
 ---
+name: Coding Standards & Quality
+description: General coding principles, TypeScript standards, file/folder structure, naming conventions, and git practices for readable, maintainable code.
 inclusion: always
 ---
 

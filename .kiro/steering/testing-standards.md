@@ -1,4 +1,6 @@
 ---
+name: Testing Standards
+description: When to write tests, approved testing tools (Vitest, Playwright), testing principles, coverage expectations, and file conventions.
 inclusion: always
 ---
 

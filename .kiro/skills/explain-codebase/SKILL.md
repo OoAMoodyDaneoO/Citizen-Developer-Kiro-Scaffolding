@@ -1,4 +1,5 @@
 ---
+name: Explain This Codebase
 description: Generate a plain-language explanation of the entire codebase for non-developer stakeholders, explaining what each part does and how they connect
 ---
 

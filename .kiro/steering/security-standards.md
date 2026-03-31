@@ -1,4 +1,6 @@
 ---
+name: Security Standards
+description: Mandatory security rules based on OWASP Top 10 covering secrets management, authentication, input validation, data protection, and API security.
 inclusion: always
 ---
 

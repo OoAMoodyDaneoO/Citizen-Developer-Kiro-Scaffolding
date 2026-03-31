@@ -1,4 +1,6 @@
 ---
+name: UI Framework & Component Standards
+description: Approved frontend stack (React, Tailwind, shadcn/ui), component patterns, accessibility requirements, responsive design rules, and forbidden patterns.
 inclusion: always
 ---
 

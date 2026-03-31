@@ -1,4 +1,5 @@
 ---
+name: Engineering Handoff Package
 description: Generate a complete handoff package for engineering teams including architecture overview, setup instructions, and technical decisions documentation
 ---
 

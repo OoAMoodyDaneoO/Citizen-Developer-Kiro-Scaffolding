@@ -1,4 +1,5 @@
 ---
+name: Security Review
 description: Run a comprehensive security review of the entire project against OWASP Top 10 and organizational security standards
 ---
 

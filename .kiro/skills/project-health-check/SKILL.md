@@ -1,4 +1,5 @@
 ---
+name: Project Health Check
 description: Run a full project health check covering code quality, security, accessibility, testing, and documentation completeness
 ---
 

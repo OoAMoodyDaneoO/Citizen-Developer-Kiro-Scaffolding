@@ -1,4 +1,6 @@
 ---
+name: Project Context & Organizational Standards
+description: Overview of workspace guardrails, who this workspace is for, how to get started, and key principles for safe prototyping.
 inclusion: always
 ---
 

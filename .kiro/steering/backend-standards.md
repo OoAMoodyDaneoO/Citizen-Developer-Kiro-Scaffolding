@@ -1,4 +1,6 @@
 ---
+name: Backend & API Standards
+description: Approved backend stack, API design conventions, error handling, database patterns, and environment configuration rules for Node.js/TypeScript projects.
 inclusion: always
 ---
 
