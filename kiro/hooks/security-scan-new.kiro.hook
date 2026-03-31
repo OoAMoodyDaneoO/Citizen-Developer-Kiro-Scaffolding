@@ -1,0 +1,23 @@
+{
+  "enabled": true,
+  "name": "Security Scan on New Files",
+  "description": "When a new file is created, automatically scans it for hardcoded secrets, API keys, passwords, tokens, and connection strings. Flags violations and suggests using environment variables instead.",
+  "version": "1",
+  "when": {
+    "type": "fileCreated",
+    "patterns": [
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.js",
+      "**/*.jsx",
+      "**/*.json",
+      "**/*.env",
+      "**/*.yaml",
+      "**/*.yml"
+    ]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "Scan this newly created file for security issues: hardcoded secrets, API keys, passwords, tokens, connection strings, or credentials. Also check for: use of eval(), dangerouslySetInnerHTML, CORS wildcard (*), or any sensitive data in localStorage. If any issues are found, fix them immediately by replacing with environment variable references and add the variable to .env.example with a placeholder value. If a .gitignore doesn't exist or doesn't include .env, fix that too."
+  }
+}

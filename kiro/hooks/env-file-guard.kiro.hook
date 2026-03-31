@@ -1,0 +1,19 @@
+{
+  "enabled": true,
+  "name": "Environment File Guard",
+  "description": "When environment or config files are created or edited, ensures no real secrets are committed and .env files are properly gitignored.",
+  "version": "1",
+  "when": {
+    "type": "fileCreated",
+    "patterns": [
+      "**/.env",
+      "**/.env.*",
+      "**/config/**/*.ts",
+      "**/config/**/*.js"
+    ]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "This environment or config file was just created. Check: 1) If it's a .env file, ensure .gitignore exists and includes .env and .env.* patterns. If not, create or update .gitignore. 2) Check that no real secrets, API keys, or passwords are present — only placeholder values like 'your-api-key-here' or 'change-me'. 3) If real-looking secrets are found (long random strings, base64 encoded values, anything that looks like a real key), replace them with placeholders immediately. 4) Ensure a corresponding .env.example file exists with the same variable names but placeholder values."
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "enabled": true,
+  "name": "Database Schema Guard",
+  "description": "When Prisma schema or database migration files are created or edited, validates the schema follows data protection standards including soft deletes, proper indexing, and encryption patterns.",
+  "version": "1",
+  "when": {
+    "type": "fileEdited",
+    "patterns": [
+      "**/prisma/schema.prisma",
+      "**/migrations/**/*.sql"
+    ]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "Review this database schema or migration change: 1) User-facing tables should have a deletedAt field for soft deletes. 2) Password fields must never store plain text — ensure bcrypt hashing is used in the application layer. 3) Frequently queried fields should have indexes. 4) Sensitive fields (email, phone, SSN) should be noted for encryption at the application layer. 5) All tables should have createdAt and updatedAt timestamps. 6) Foreign key relationships should have appropriate cascade rules. Flag any issues and suggest fixes."
+  }
+}

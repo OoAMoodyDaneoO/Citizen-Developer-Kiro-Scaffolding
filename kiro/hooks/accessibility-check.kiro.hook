@@ -1,0 +1,17 @@
+{
+  "enabled": true,
+  "name": "Accessibility & UI Standards Check",
+  "description": "When a new React component file is created, checks that it uses semantic HTML, includes proper accessibility attributes, has TypeScript interfaces for props, and follows the approved component patterns.",
+  "version": "1",
+  "when": {
+    "type": "fileCreated",
+    "patterns": [
+      "**/*.tsx",
+      "**/components/**/*.ts"
+    ]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "Review this new component file for accessibility and UI standards compliance: 1) Uses semantic HTML (nav, main, article, button) not divs for everything. 2) Images have meaningful alt attributes. 3) Form inputs have associated labels. 4) Interactive elements are keyboard accessible. 5) Uses TypeScript interfaces for props (not 'any'). 6) Uses approved component library (shadcn/ui, Radix). 7) No inline styles — uses Tailwind or CSS Modules. If issues are found, fix them directly."
+  }
+}
